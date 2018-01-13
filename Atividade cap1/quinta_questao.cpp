@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ int len(char s[]){
 
 bool cmp(char s[],char s2[]){
 	int i = 0;
-	while(*(i+s)!= NULL){
+	while(*(i+s)!= NULL && *(i+s2)!= NULL){
 		if(s[i] != s2[i]){
 			return false;
 		}
@@ -42,17 +43,18 @@ void cat(char s[],char s2[]){
 int main()
 {
 	char nome[] = "Fulano";
-	char nome2[] = "Fulano";
+	char nome2[] = "fulano2";
 	//cout <<len(nome);
 	if (cmp(nome,nome2)){
-		cout << "sao iquais";	
+		cout << "sao iquais"<<endl;	
 	}
 	else
 	{
-		cout<< "sao diferentes";
+		cout<< "sao diferentes"<<endl;
 	}
 	cat(nome,nome2);
-	cout<<nome;
+	cout<<nome<<endl;
+	system("pause");
 		
 		
 	

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 using namespace std;
 
@@ -21,5 +22,5 @@ int main () {
    string s2 = "World"; 
    cout << "Maior(s1, s2): " << Maior(s1, s2) << endl; 
 
-   return 0;
+   return EXIT_SUCCESS;
 }

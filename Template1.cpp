@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
+#include <stdlib.h>
 using namespace std;
  
 template<class x>
@@ -45,6 +46,7 @@ int main()
 	tipo1.soma(1.4,0.7);
 	tipo1.inserir(1,33);
 	cout<<tipo1.posicao(33);
+	system("pause");
 
 	return 0;
 }
